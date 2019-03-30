@@ -1,6 +1,8 @@
 package com.TestCases;
 
+
 import org.testng.Assert;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -16,7 +18,7 @@ public class ProductNServicesPageTest extends TestBase {
 	LoginPage loginpage;
 	ProductNServicesPage productNServicesPage;
 	
-	String SheetName = "NewServiceInfo";
+	String sheetName = "Sheet1";
 	
 	public ProductNServicesPageTest() {
 	super();
@@ -34,7 +36,7 @@ public class ProductNServicesPageTest extends TestBase {
 }
 	@DataProvider
 	public Object[][] moon(){
-		Object[][] data = TestUtil.getTestData(SheetName);
+		Object[][] data = TestUtil.getTestData(sheetName);
 		return data;
 	}
 
